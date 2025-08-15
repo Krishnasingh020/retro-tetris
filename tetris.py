@@ -23,11 +23,11 @@ HEIGHT = TOP_PAD + PLAYFIELD_H + 40
 
 FPS = 60
 
-BLACK = (3, 6, 3)
+BLACK = (0, 0, 0)
 GREEN = (0, 220, 120)
-DIM_GREEN = (30, 80, 30)
+DIM_GREEN = (0, 80, 40)
 GHOST_GREEN = (0, 160, 80)
-HOLD_BOX_GREEN = (0, 200, 90)
+HOLD_BOX_GREEN = (255, 255, 255)
 
 font_title = pygame.font.SysFont("couriernew", 36, bold=True)
 font_block = pygame.font.SysFont("couriernew", 22, bold=True)
@@ -77,7 +77,7 @@ board = [[None for _ in range(COLS)] for _ in range(ROWS)]
 dot_surf = font_dot.render(".", True, DIM_GREEN)
 block_surf = font_block.render("[]", True, GREEN)
 ghost_surf = font_block.render("[]", True, GHOST_GREEN)
-hold_label = font_small.render("HOLD", True, GREEN)
+hold_label = font_small.render("HOLD", True, HOLD_BOX_GREEN)
 
 def spawn_piece():
     key = random.choice(list(SHAPES.keys()))
