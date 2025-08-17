@@ -4,6 +4,9 @@ A retro-style Tetris game built with Python and Pygame, featuring an old-school 
 
 ---
 
+# Screenshot of the game 
+![Description](Retro_tetris_SS.png)
+
 ## 🎮 Features
 
 - **Retro Look** — Classic ASCII-style visuals for a nostalgic feel.
